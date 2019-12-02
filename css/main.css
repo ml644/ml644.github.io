@@ -26,15 +26,62 @@ body {
   background-color: #eeeeee;
 }
 
-header {
-  margin: 20px;
-  padding: 80px 700px;
+.container1 {
+  margin: 0px;
   text-decoration: none;
-  margin-left: 100px;
   font-size: 40px;
   font-family: Calibri;
   color: black;
   list-style: none;
+}
+
+.container1 p {
+  padding-left: 850px;
+}
+
+.container2 {
+  float: left;
+
+}
+
+header h2 {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  margin-right: 600px;
+  padding: 0px;
+  font-size: 60px;
+}
+
+header h4 {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  padding-left: 275px;
+  font-size: 60px;
+}
+
+
+
+
+header p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 600px;
+  padding: 0px;
+  font-size: 24px;
+}
+
+header img {
+  float: right;
+  margin: 50px;
+}
+
+.container p a {
+  text-decoration: none;
+  color: black;
+}
+
+.container p a:hover {
+  color: #b3d4fc;
 }
 
 header br {
@@ -71,8 +118,6 @@ header br {
   z-index: 1;
   opacity: 1;
 }
-
-
 
 .container .box:hover .icon {
   top: 20px;
@@ -129,10 +174,6 @@ nav {
   width: 100%;
   height: 100px;
   background-color: #b3d4fc;
-}
-
-h2 {
-  margin: 0px;
 }
 
 #logo {
