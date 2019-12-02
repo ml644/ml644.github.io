@@ -26,10 +26,127 @@ body {
   background-color: #eeeeee;
 }
 
+header {
+  margin: 20px;
+  padding: 80px 700px;
+  text-decoration: none;
+  margin-left: 100px;
+  font-size: 40px;
+  font-family: Calibri;
+  color: black;
+  list-style: none;
+}
+
+header br {
+  font-size: x-large;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.container .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: black;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background: #b3d4fc;
+  transition: 0.5s;
+  z-index: 1;
+  opacity: 1;
+}
+
+
+
+.container .box:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.container .box .icon .imgcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: white;
+}
+
+.container .box:hover .icon .imgcenter {
+  font-size: 40px;
+}
+
+.container .box .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 60px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.container .box:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+
+.container .box .content h3{
+  margin: 0 0 10px;
+  padding: 0;
+  color: #eeeeee;
+  font-size: 24px;
+}
+
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+  color: #eeeeee;
+}
+
 nav {
   width: 100%;
   height: 100px;
   background-color: #b3d4fc;
+}
+
+h2 {
+  margin: 0px;
+}
+
+#logo {
+  float: left;
+  margin-left: 100px;
+}
+
+nav a img {
+  padding: 0 30px;
+  display: inline-block;
+}
+
+nav a img:hover {
+  color: #eeeeee;
 }
 
 h1 {
@@ -40,7 +157,7 @@ h1 {
   color: black;
   list-style: none;
   float: left;
-  padding: 0 150px;
+  padding: 0 1px;
 }
 
 ul {
